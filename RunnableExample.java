@@ -16,11 +16,11 @@ class MyRunnable implements Runnable {
 class RunnableExample {
     public static void main(String args[]) {
         
-        Runnable myRunnable1 = new MyRunnable();
-        Runnable myRunnable2 = new MyRunnable();
+        MyRunnable myRun1 = new MyRunnable();
+        MyRunnable myRun2 = new MyRunnable();
 
-        Thread t1 = new Thread(myRunnable1, "January 1st is Monday");
-        Thread t2 = new Thread(myRunnable2, "January 2nd is Tuesday");
+        Thread t1 = new Thread(myRun1, "January 1st is Monday");
+        Thread t2 = new Thread(myRun2, "January 2nd is Tuesday");
 
         t1.start();
         t2.start();
